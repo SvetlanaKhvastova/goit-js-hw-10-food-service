@@ -1,7 +1,7 @@
 // получаем массив данных
 import dataMenu from '../menu.json';
 
-// получаем доступы к статике html
+// получаем доступы к DOM
 import ref from '../js/refs.js';
 // деструктуризируем
 const { menuSection } = ref;
