@@ -7,8 +7,9 @@ import '../styles.css';
 import ref from '../js/refs.js';
 const { body, themeSwitch } = ref;
 
-body.addEventListener('change', addClassTheme(Theme));
-themeSwitch.addEventListener('change', getLocalStorage(Theme));
+themeSwitch.addEventListener('change', () => addClassTheme(Theme));
+
+getLocalStorage(Theme);
 
 function addClassTheme(e) {
   if (themeSwitch.checked) {
